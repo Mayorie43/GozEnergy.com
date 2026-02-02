@@ -1760,3 +1760,344 @@ body {
 }
 
 
+
+
+
+
+
+
+
+/* ===========================
+   GOX SERVICES SECTION 1
+   =========================== */
+
+.gox-services-section {
+  padding: 80px 5%;
+  background: #ffffff;
+}
+
+.gox-services-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.gox-services-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0b1c2d;
+}
+
+.gox-services-header p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* GRID */
+.gox-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.gox-service-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+
+.gox-service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* ZOOM EFFECT */
+.gox-service-card:hover img,
+.gox-service-card:focus img,
+.gox-service-card:active img {
+  transform: scale(1.12);
+}
+
+/* OVERLAY */
+/* OVERLAY - ALWAYS VISIBLE */
+.gox-service-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  opacity: 1; /* ALWAYS SHOW */
+  transition: background 0.4s ease;
+}
+
+/* TEXT */
+.gox-service-overlay h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* SHOW TEXT ON HOVER / TOUCH */
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .gox-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gox-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gox-services-header h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* end of our services 1 */
+
+
+
+
+
+
+
+
+/* ===========================
+   GOX EQUIPMENT & TECHNOLOGY
+   =========================== */
+
+.gox-equipment-section {
+  padding: 90px 5%;
+  background: #ffffff;
+}
+
+.gox-equipment-header {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 60px;
+}
+
+.gox-equipment-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1c2d;
+  margin-bottom: 12px;
+}
+
+.gox-equipment-header p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* GRID */
+.gox-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.gox-equipment-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE */
+.gox-equipment-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+.gox-equipment-content {
+  padding: 26px 24px 30px;
+}
+
+.gox-equipment-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #0b1c2d;
+}
+
+/* LIST */
+.gox-equipment-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gox-equipment-content ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.gox-equipment-content ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d35400;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .gox-equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gox-equipment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gox-equipment-header h2 {
+    font-size: 28px;
+  }
+
+  .gox-equipment-content h3 {
+    font-size: 20px;
+  }
+}
+
+/* end of gox equipment */
+
+
+
+
+
+
+
+
+/* ===== Drilling Section ===== */
+.drilling-section {
+  padding: 60px 20px;
+  background-color: #fefefe;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.drilling-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Image Section */
+.drilling-image {
+  position: relative;
+  flex: 1 1 500px;
+  min-width: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.drilling-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.drilling-image .image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #0f172a;
+}
+
+.drilling-image .image-text span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+.drilling-image .image-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Text Section */
+.drilling-text {
+  flex: 1 1 500px;
+  min-width: 300px;
+}
+
+.drilling-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.drilling-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #334155;
+}
+
+.drilling-text .btn {
+  display: inline-block;
+  background-color: #0f172a;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.drilling-text .btn:hover {
+  background-color: #1e293b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .drilling-content {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .drilling-text h2 {
+    font-size: 28px;
+  }
+
+  .drilling-image .image-text h2 {
+    font-size: 24px;
+  }
+}
